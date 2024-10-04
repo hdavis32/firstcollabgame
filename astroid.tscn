@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dj0w5dabu7pkw"]
+
+[ext_resource type="Texture2D" uid="uid://c2rqye34mcnvg" path="res://planet05.png" id="1_dylxq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gbkpq"]
+radius = 516.016
+
+[node name="astroid" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_dylxq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.25, 0.25)
+shape = SubResource("CircleShape2D_gbkpq")
