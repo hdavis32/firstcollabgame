@@ -17,6 +17,10 @@ position = Vector2(66, 1734)
 position = Vector2(539, -39)
 
 [node name="scoreboard" parent="." instance=ExtResource("4_sa64o")]
+offset_left = 8.0
+offset_top = -1737.0
+offset_right = 48.0
+offset_bottom = -1697.0
 
 [node name="moveright" type="TouchScreenButton" parent="."]
 position = Vector2(974, 817)
