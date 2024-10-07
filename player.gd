@@ -15,4 +15,9 @@ func _process(delta):
 		velocity.x = movespeed
 	else:
 		velocity.x = 0
+	if Input.is_action_pressed("jump"):
+		velocity.y = -300
+	else: 
+		velocity.y = 150
+			
 	move_and_slide()
