@@ -1,21 +1,21 @@
 [gd_scene load_steps=4 format=3 uid="uid://cg0vioco6wtir"]
 
 [ext_resource type="Script" path="res://collectable.gd" id="1_t1en0"]
-[ext_resource type="Texture2D" uid="uid://c2rqye34mcnvg" path="res://planet05.png" id="2_nlbvn"]
+[ext_resource type="Texture2D" uid="uid://cmq0kvlvcxo5m" path="res://gemdesi2.png" id="2_iy1f7"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bc84u"]
-radius = 52.0216
+radius = 15.0333
 
 [node name="collectable" type="Area2D"]
 script = ExtResource("1_t1en0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, 1)
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("2_nlbvn")
+position = Vector2(0.999997, 0.999998)
+scale = Vector2(0.991176, 0.669048)
+texture = ExtResource("2_iy1f7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 1.5)
+position = Vector2(1, -1)
 shape = SubResource("CircleShape2D_bc84u")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
