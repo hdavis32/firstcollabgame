@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cg0vioco6wtir"]
 
 [ext_resource type="Script" path="res://collectable.gd" id="1_t1en0"]
-[ext_resource type="Texture2D" uid="uid://bkpidnuayx4bj" path="res://Asteroid Brown.png" id="2_fu76r"]
+[ext_resource type="Texture2D" uid="uid://c2rqye34mcnvg" path="res://planet05.png" id="2_nlbvn"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bc84u"]
 radius = 52.0216
@@ -10,12 +10,12 @@ radius = 52.0216
 script = ExtResource("1_t1en0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-1, -9)
-scale = Vector2(0.725, 0.6125)
-texture = ExtResource("2_fu76r")
+position = Vector2(0, 1)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_nlbvn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-2, -6)
+position = Vector2(0, 1.5)
 shape = SubResource("CircleShape2D_bc84u")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
