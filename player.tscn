@@ -1,17 +1,23 @@
-[gd_scene load_steps=4 format=3 uid="uid://dyyhdhthtts4u"]
+[gd_scene load_steps=3 format=3 uid="uid://dyyhdhthtts4u"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_r3paj"]
-[ext_resource type="Texture2D" uid="uid://cj3oyylgk6ejp" path="res://icon.svg" id="2_stlvx"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_iwtph"]
-size = Vector2(126, 127)
+[ext_resource type="Texture2D" uid="uid://ctv7nv63uk76" path="res://ship1.png" id="2_pdrho"]
 
 [node name="player" type="CharacterBody2D"]
+position = Vector2(45, 247)
 script = ExtResource("1_r3paj")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_stlvx")
+[node name="NewAtlasTexture" type="Sprite2D" parent="."]
+position = Vector2(479, 1597)
+scale = Vector2(0.382978, 0.265455)
+texture = ExtResource("2_pdrho")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 0.5)
-shape = SubResource("RectangleShape2D_iwtph")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(66, 55.0001)
+scale = Vector2(18.1429, 9.26923)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(479.344, 1597.13)
+scale = Vector2(0.364046, 0.256026)
+polygon = PackedVector2Array(39.9014, -16.3672, 49.6111, 5.65088, 70.5, 13.1851, 70.5, 54.6233, 147.386, 116.669, 147.386, 140.104, 65.2777, 107.363, 65.2777, 129.966, 65.2777, 137.5, 31.3333, 137.5, 31.3333, 107.363, 26.1111, 107.363, 23.5, 77.2261, 10.4445, 84.7603, 5.22217, 96.0618, 2.61108, 107.363, -5.22229, 99.8289, -18.2778, 84.7603, -26.1112, 80.9932, -23.5, 107.363, -31.3334, 107.363, -28.7223, 133.733, -67.8889, 137.5, -67.8889, 103.596, -141, 137.5, -143.611, 118.665, -69.6196, 54.1753, 23.5, -103.596, -44.8975, -31.7539, -75.1134, 54.1753, -77.8604, 15.1167, -41.7778, -5.65063, -36.5557, -24.4861, -41.7778, -28.2534, -44.3889, -47.0889, -47.0001, -80.9929, -44.3889, -92.2944, -39.1667, -111.13, -33.9445, -107.363, -31.3334, -92.2944, -31.3334, -92.2944, -23.5, -111.13, -20.8889, -111.13, -18.2778, -122.431, -10.4445, -126.198, -5.22229, -133.733, 0, -133.733, 5.22217, -133.733, 10.4445, -126.198, 13.0555, -122.431, 18.2777, -118.664, -47.6444, -74.7183, -50.3914, -55.189, 26.1111, -92.2944, 28.7222, -92.2944, 33.9445, -111.13, 36.5555, -111.13, 44.3889, -103.596, 44.3889, -84.76, 44.3889, -58.3904, 44.3889, -35.7876)
+metadata/_edit_group_ = true

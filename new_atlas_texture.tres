@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://b2fwltfy7ufhx"]
+
+[ext_resource type="Texture2D" uid="uid://cp3njo31c1sgv" path="res://PC Computer - Crypt of the NecroDancer - Leprechaun (1).png" id="1_vbrlf"]
+
+[resource]
+atlas = ExtResource("1_vbrlf")
+region = Rect2(49, 0, 14, 26)
