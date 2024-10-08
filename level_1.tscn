@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://c01lfjl7ftefd" path="res://spawner.tscn" id="3_n2x40"]
 [ext_resource type="PackedScene" uid="uid://c7c6lj58wu2nu" path="res://scoreboard.tscn" id="4_sa64o"]
 [ext_resource type="PackedScene" uid="uid://dkm4utjb5i06l" path="res://border.tscn" id="4_x788s"]
+[ext_resource type="PackedScene" uid="uid://4f0hea7e06w1" path="res://astroidspawner.tscn" id="6_d88ef"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d4ck0"]
 size = Vector2(200, 800)
@@ -19,7 +20,7 @@ scale = Vector2(2.13867, 2.69028)
 texture = ExtResource("1_2v6ov")
 
 [node name="player" parent="." instance=ExtResource("1_0ab53")]
-position = Vector2(516, 1778)
+position = Vector2(45, 229)
 
 [node name="spawner" parent="." instance=ExtResource("3_n2x40")]
 position = Vector2(539, -39)
@@ -49,3 +50,8 @@ position = Vector2(510, 387)
 scale = Vector2(65.0709, -28.3532)
 shape = SubResource("RectangleShape2D_cuoiq")
 action = "jump"
+[node name="border2" parent="." instance=ExtResource("4_x788s")]
+position = Vector2(1124, 0)
+
+[node name="astroidspawner" parent="." instance=ExtResource("6_d88ef")]
+position = Vector2(533, -48)

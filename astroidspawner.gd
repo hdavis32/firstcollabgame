@@ -1,6 +1,6 @@
 extends Node2D
 
-var collectable = preload("res://collectable.tscn")
+var astroid = preload("res://astroid.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -12,6 +12,6 @@ func _process(delta: float) -> void:
 
 
 func _on_timer_timeout() -> void:
-	var newcollectable = collectable.instantiate()
-	add_child(newcollectable)
-	newcollectable.position.x = randi_range(0,get_viewport().size.x)
+	var newastroid = astroid.instantiate()
+	add_child(newastroid)
+	newastroid.position.x = randi_range(0,get_viewport().size.x)
