@@ -1,19 +1,20 @@
 [gd_scene load_steps=4 format=3 uid="uid://dyyhdhthtts4u"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_r3paj"]
-[ext_resource type="Texture2D" uid="uid://ctv7nv63uk76" path="res://ship1.png" id="2_pdrho"]
+[ext_resource type="Texture2D" uid="uid://cj3oyylgk6ejp" path="res://icon.svg" id="2_stlvx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iwtph"]
+size = Vector2(127, 128)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q7t3s"]
 size = Vector2(130, 73)
 
 [node name="player" type="CharacterBody2D"]
-position = Vector2(45, 247)
 script = ExtResource("1_r3paj")
 
-[node name="NewAtlasTexture" type="Sprite2D" parent="."]
-position = Vector2(479, 1597)
-scale = Vector2(0.382978, 0.265455)
-texture = ExtResource("2_pdrho")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 1)
+texture = ExtResource("2_stlvx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(487, 1598.5)
