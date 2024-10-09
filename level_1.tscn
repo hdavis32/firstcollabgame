@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cmgyx638c3i7x"]
+[gd_scene load_steps=10 format=3 uid="uid://cmgyx638c3i7x"]
 
 [ext_resource type="PackedScene" uid="uid://dyyhdhthtts4u" path="res://player.tscn" id="1_0ab53"]
 [ext_resource type="Texture2D" uid="uid://cc8grmpd171v2" path="res://game background.jpg" id="1_2v6ov"]
@@ -12,15 +12,18 @@ size = Vector2(200, 800)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cuoiq"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fsej4"]
+size = Vector2(3043, 198)
+
 [node name="level1" type="Node2D"]
 
 [node name="GameBackground" type="Sprite2D" parent="."]
-position = Vector2(637, 974)
-scale = Vector2(2.13867, 2.69028)
+position = Vector2(597, 977)
+scale = Vector2(2.10918, 2.69792)
 texture = ExtResource("1_2v6ov")
 
 [node name="player" parent="." instance=ExtResource("1_0ab53")]
-position = Vector2(45, 229)
+position = Vector2(479, 1783)
 
 [node name="spawner" parent="." instance=ExtResource("3_n2x40")]
 position = Vector2(539, -39)
@@ -56,3 +59,9 @@ position = Vector2(1124, 0)
 
 [node name="astroidspawner" parent="." instance=ExtResource("6_d88ef")]
 position = Vector2(533, -48)
+
+[node name="floor" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor"]
+position = Vector2(704.5, 2028)
+shape = SubResource("RectangleShape2D_fsej4")
