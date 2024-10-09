@@ -21,7 +21,12 @@ texture = ExtResource("1_2v6ov")
 position = Vector2(45, 229)
 
 [node name="spawner" parent="." instance=ExtResource("3_n2x40")]
-position = Vector2(539, -39)
+position = Vector2(249, 82)
+
+[node name="astroidspawner" parent="." instance=ExtResource("6_d88ef")]
+position = Vector2(751, 110)
+rotation = 3.14159
+scale = Vector2(185.156, -106.69)
 
 [node name="scoreboard" parent="." instance=ExtResource("4_sa64o")]
 offset_left = 8.0
@@ -45,6 +50,3 @@ action = "left"
 
 [node name="border2" parent="." instance=ExtResource("4_x788s")]
 position = Vector2(1124, 0)
-
-[node name="astroidspawner" parent="." instance=ExtResource("6_d88ef")]
-position = Vector2(533, -48)
