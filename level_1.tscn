@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cmgyx638c3i7x"]
+[gd_scene load_steps=9 format=3 uid="uid://cmgyx638c3i7x"]
 
 [ext_resource type="PackedScene" uid="uid://dyyhdhthtts4u" path="res://player.tscn" id="1_0ab53"]
 [ext_resource type="Texture2D" uid="uid://cc8grmpd171v2" path="res://game background.jpg" id="1_2v6ov"]
@@ -50,6 +50,7 @@ position = Vector2(510, 387)
 scale = Vector2(65.0709, -28.3532)
 shape = SubResource("RectangleShape2D_cuoiq")
 action = "jump"
+
 [node name="border2" parent="." instance=ExtResource("4_x788s")]
 position = Vector2(1124, 0)
 
