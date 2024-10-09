@@ -15,14 +15,3 @@ func _on_timer_timeout() -> void:
 	var newcollectable = collectable.instantiate()
 	add_child(newcollectable)
 	newcollectable.position.x = randi_range(0,get_viewport().size.x)
-
-var astroid = preload("res://astroid.tscn")
-
-func _on_timer_2_timeout() -> void:
-	var newastroid = astroid.instantiate()
-	add_child(newastroid)
-	newastroid.position.x = randi_range(0,get_viewport().size.x)
-
-
-
-	pass # Replace with function body.
