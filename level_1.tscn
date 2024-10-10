@@ -9,23 +9,21 @@
 [node name="level1" type="Node2D"]
 
 [node name="GameBackground" type="Sprite2D" parent="."]
-position = Vector2(3513, 782)
+position = Vector2(553, 933)
 scale = Vector2(2.10918, 2.69792)
 texture = ExtResource("1_2v6ov")
 
 [node name="player" parent="." instance=ExtResource("1_0ab53")]
 position = Vector2(479, 1783)
+scale = Vector2(0.920001, 1.0292)
 
 [node name="scoreboard" parent="." instance=ExtResource("4_sa64o")]
 offset_left = 8.0
-offset_top = -25.0
+offset_top = -1767.0
 offset_right = 48.0
-offset_bottom = 15.0
-
-[node name="border" parent="." instance=ExtResource("4_x788s")]
-
-[node name="border2" parent="." instance=ExtResource("4_x788s")]
-position = Vector2(1124, 0)
+offset_bottom = -1727.0
 
 [node name="spawner" parent="." instance=ExtResource("5_c18id")]
-position = Vector2(557, -337)
+position = Vector2(416, -330)
+
+[node name="border" parent="." instance=ExtResource("4_x788s")]
