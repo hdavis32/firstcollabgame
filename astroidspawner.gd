@@ -14,4 +14,4 @@ func _process(delta: float) -> void:
 func _on_timer_timeout() -> void:
 	var newcollectable = collectable.instantiate()
 	add_child(newcollectable)
-	newcollectable.position.x = randi_range(0,get_viewport().size.x)
+	newcollectable.position.x = randi_range(0, get_viewport().size.x)
