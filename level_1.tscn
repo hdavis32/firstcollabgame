@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://cmgyx638c3i7x"]
+[gd_scene load_steps=7 format=3 uid="uid://cmgyx638c3i7x"]
 
 [ext_resource type="PackedScene" uid="uid://dyyhdhthtts4u" path="res://player.tscn" id="1_0ab53"]
 [ext_resource type="Texture2D" uid="uid://cc8grmpd171v2" path="res://game background.jpg" id="1_2v6ov"]
 [ext_resource type="PackedScene" uid="uid://c7c6lj58wu2nu" path="res://scoreboard.tscn" id="4_sa64o"]
 [ext_resource type="PackedScene" uid="uid://dkm4utjb5i06l" path="res://border.tscn" id="4_x788s"]
 [ext_resource type="PackedScene" uid="uid://c01lfjl7ftefd" path="res://spawner.tscn" id="5_c18id"]
+[ext_resource type="PackedScene" uid="uid://4f0hea7e06w1" path="res://astroidspawner.tscn" id="6_d88ef"]
 
 [node name="level1" type="Node2D"]
 
@@ -27,3 +28,6 @@ offset_bottom = -1727.0
 position = Vector2(416, -330)
 
 [node name="border" parent="." instance=ExtResource("4_x788s")]
+
+[node name="astroidspawner" parent="." instance=ExtResource("6_d88ef")]
+position = Vector2(467, -139)

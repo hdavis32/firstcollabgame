@@ -3,9 +3,10 @@
 [ext_resource type="Script" path="res://astroidspawner.gd" id="1_th8yc"]
 
 [node name="astroidspawner" type="Node2D"]
+position = Vector2(456, 13)
 script = ExtResource("1_th8yc")
 
-[node name="Timer1" type="Timer" parent="."]
+[node name="Timer2" type="Timer" parent="."]
 wait_time = 3.0
 
-[connection signal="timeout" from="Timer1" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
