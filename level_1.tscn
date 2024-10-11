@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://c01lfjl7ftefd" path="res://spawner.tscn" id="3_n2x40"]
 [ext_resource type="PackedScene" uid="uid://c7c6lj58wu2nu" path="res://scoreboard.tscn" id="4_sa64o"]
 [ext_resource type="PackedScene" uid="uid://dkm4utjb5i06l" path="res://border.tscn" id="4_x788s"]
+[ext_resource type="PackedScene" uid="uid://4f0hea7e06w1" path="res://astroidspawner.tscn" id="6_d88ef"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d4ck0"]
 size = Vector2(200, 800)
@@ -25,7 +26,7 @@ texture = ExtResource("1_2v6ov")
 position = Vector2(479, 1783)
 
 [node name="spawner" parent="." instance=ExtResource("3_n2x40")]
-position = Vector2(527, 280)
+position = Vector2(539, -39)
 
 [node name="scoreboard" parent="." instance=ExtResource("4_sa64o")]
 offset_left = 8.0
